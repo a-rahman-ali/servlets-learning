@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JEE4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>ArithmeticOperations.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>CalculateServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Calculate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CalculateServlet</servlet-name>
+  	<url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Add</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddServlet</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SubtractServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Subtract</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SubtractServlet</servlet-name>
+  	<url-pattern>/subtract</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MultiplyServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Multiply</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MultiplyServlet</servlet-name>
+  	<url-pattern>/multiply</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DivideServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Divide</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DivideServlet</servlet-name>
+  	<url-pattern>/divide</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ModuloServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Modulo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ModuloServlet</servlet-name>
+  	<url-pattern>/modulo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ResultsServlet</servlet-name>
+  	<servlet-class>com.servlets.requestdispatcher.Results</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ResultsServlet</servlet-name>
+  	<url-pattern>/results</url-pattern>
+  </servlet-mapping>
+</web-app>
